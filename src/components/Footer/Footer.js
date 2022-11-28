@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebookSquare, FaLinkedin, FaTelegram, FaTwitterSquare, IconName } from "react-icons/fa";
+import { TypeAnimation } from 'react-type-animation';
 const Footer = () => {
     return (
       <div className="bg-black">
@@ -12,8 +13,25 @@ const Footer = () => {
                 title="Company"
                 className="inline-flex items-center"
               >
-                <span className="ml-2 handText text-xl font-bold tracking-wide text-white uppercase">
-                  Md Ismail Hossen
+                <span className="ml-2 flex handText text-xl font-bold tracking-wide text-white uppercase">
+                  Md{" "}
+                  <TypeAnimation
+                  className='ml-2 text-yellow-300'
+                    sequence={[
+                      "Ismail Hossen", // Types 'One'
+                      1000, // Waits 1s
+                      "Ismail Hossen", // Deletes 'One' and types 'Two'
+                      2000, // Waits 2s
+                      
+                      // Types 'Three' without deleting 'Two'
+                      () => {
+                        console.log("Done typing!"); // Place optional callbacks anywhere in the array
+                      },
+                    ]}
+                    wrapper="div"
+                    cursor={true}
+                    repeat={Infinity}
+                  />
                 </span>
               </a>
               <div className="mt-6 lg:max-w-sm">
@@ -99,38 +117,38 @@ const Footer = () => {
                 </a>
               </div>
               <p className="mt-4 text-sm text-white">
-                Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-                spare ribs salami.
+                You Contact me anytime.I am available those social network.Thank
+                You!
               </p>
             </div>
           </div>
           <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
-            <p className="text-sm text-gray-600">
-              © Copyright 2020 Lorem Inc. All rights reserved.
+            <p className="text-sm text-white">
+              © Copyright 2022 Md Ismail Hossen. All rights reserved.
             </p>
             <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
               <li>
                 <a
-                  href="/"
-                  className="text-sm text-gray-600 transition-colors duration-300 hover:text-yellow-300"
+                  href="/project"
+                  className="text-sm text-white transition-colors duration-300 hover:text-yellow-300"
                 >
-                  F.A.Q
+                  Projects
                 </a>
               </li>
               <li>
                 <a
-                  href="/"
-                  className="text-sm text-gray-600 transition-colors duration-300 hover:text-yellow-300"
+                  href="/contact"
+                  className="text-sm text-white transition-colors duration-300 hover:text-yellow-300"
                 >
-                  Privacy Policy
+                  Contact
                 </a>
               </li>
               <li>
                 <a
-                  href="/"
-                  className="text-sm text-gray-600 transition-colors duration-300 hover:text-yellow-300"
+                  href="/about"
+                  className="text-sm text-white transition-colors duration-300 hover:text-yellow-300"
                 >
-                  Terms &amp; Conditions
+                  About
                 </a>
               </li>
             </ul>
