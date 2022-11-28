@@ -55,7 +55,7 @@ const Navbar = () => {
               title="Company"
               class="inline-flex items-center"
             >
-              <span class="ml-2  border-b-2 border-yellow-300 text-xl font-bold tracking-wide hover:text-yellow-300 text-white uppercase">
+              <span class="ml-2 handText border-b-2 border-yellow-300 text-xl font-bold hover:text-yellow-300 text-white uppercase">
                 Md Ismail Hossen
               </span>
             </Link>
