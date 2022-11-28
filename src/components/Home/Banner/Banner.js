@@ -36,10 +36,10 @@ const Banner = () => {
           </div>
           <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl sm:text-center">
-              <h2 className="mb-3 font-sans text-3xl font-bold tracking-tight text-slate-400  sm:text-4xl sm:leading-none heading">
+              <h2 className="mb-3 font-sans text-3xl lg:text-5xl text-center font-bold tracking-tight text-slate-400    heading">
                 I'm Md Ismail <span className="text-yellow-300">Hossen</span>
               </h2>
-              <h3 className="mb-6 flex justify-center items-center font-sans text-2xl font-bold tracking-tight text-slate-400  sm:text-4xl sm:leading-none heading">
+              <h3 className="mb-6 flex justify-center items-center font-sans text-2xl font-bold tracking-tight text-slate-400  sm:text-3xl sm:leading-none heading">
                 I'm a
                 <span className="text-yellow-300 ml-2">
                   <TypeAnimation
@@ -68,14 +68,14 @@ const Banner = () => {
                 business and individuals by developing websites. I build
                 websites to make you successful in the long term.
               </p>
-              <div>
-                <button className="btn mb-7">Download Resume</button>
+              <div className='text-center'>
+                <button className="btn mb-10 lg:mb-16">Download Resume</button>
               </div>
 
               <a
                 href="#best-project"
                 aria-label="Scroll down"
-                className="flex items-center justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
+                className="flex items-center  justify-center w-10 h-10 mx-auto text-white duration-300 transform border border-gray-400 rounded-full hover:text-teal-accent-400 hover:border-teal-accent-400 hover:shadow hover:scale-110"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import AddProject from "../AddProject/AddProject";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact/>
+            },
+            {
+                path: '/add',
+                element: <AddProject/>
             }
         ]
        
