@@ -22,7 +22,11 @@ const Footer = () => {
                       1000, // Waits 1s
                       "Ismail Hossen", // Deletes 'One' and types 'Two'
                       2000, // Waits 2s
-                      
+                      "Ismail Hossen", // Deletes 'One' and types 'Two'
+                      2000, // Waits 2s
+                      "Ismail Hossen", // Deletes 'One' and types 'Two'
+                      2000, // Waits 2s
+                    
                       // Types 'Three' without deleting 'Two'
                       () => {
                         console.log("Done typing!"); // Place optional callbacks anywhere in the array

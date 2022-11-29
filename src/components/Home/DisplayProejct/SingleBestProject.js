@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 
 const SingleBestProject = ({project}) => {
     const { image, name, liveSite, clientCode, serverCode, desc } = project;
@@ -9,7 +9,7 @@ const SingleBestProject = ({project}) => {
           <img src={image} alt="" className="h-64" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{name} (Full Stack)</h2>
+          <h2 className="card-title">{name}</h2>
           <p>
             {desc ? desc.slice(0, 100) : ""}{" "}
             <a

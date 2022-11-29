@@ -67,6 +67,7 @@ const ProjectLayout = () => {
             </div>
             {/* <!-- Page content here --> */}
             <div className="container mx-auto">
+              
               <Outlet />
             </div>
           </div>
