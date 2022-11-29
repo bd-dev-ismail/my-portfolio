@@ -1,6 +1,6 @@
 [
   {
-    "_id": 101,
+    "projectCategoryId": "63852e422dfb96d4337ba9f1",
     "name": "Barrel Of Books",
     "image": "https://i.ibb.co/fp9PQ5s/smartmockups-lb1693vh.png",
     "liveSite": "https://barrel-of-books.web.app/",
@@ -9,7 +9,7 @@
     "desc": "We have three different queries like Buyer, Seller & Admin facilities. Buyer can by products with successfull payment by their valid card. Buyers can report any product to Admin. The seller can add their products & also see their published products. If the seller wants seller able to delete her product Admin have three layers in the dashboard like all seller, all buyers & Reported Item. In the reported Item admin see all reported items done by the buyer & Admin is able to delete that product. The seller can advertise her product & advertise able products display on the home page in advertising section."
   },
   {
-    "_id": 102,
+    "projectCategoryId": "63852e422dfb96d4337ba9f1",
     "name": "Healthy Mind",
     "image": "https://i.ibb.co/BZ7TBN1/smartmockups-lb16xn2a.jpg",
     "liveSite": "https://healthy-mind-8c70e.web.app/",
@@ -18,7 +18,7 @@
     "desc": "Login & Register Functionality with the firebase authentication system. We have proceted route of the My Reviews & Add Services page . if users can't log in they can not access protected route . In Home page shows only three services by sorting MongoDB With A button of See All Services we have a services page user can see all services with the view details button with each service card. Services card contains an image, price, and name & if the user clicks the service image it will be displayed on a popup. After clicking the Services Details button user can see service details & also see each service's reviews. Interestingly here user can also add her review but he/she needs to log in first. After login user can see extra two routes whicareis My Reviews & Add Services. My Reviews page user can see her given all reviews. Add Services page users can add services that can be added on the Services page. To secure our data we have JWT (JSON Web Token). if the user has no token he can't access our data, if the user has a token but is not valid also can't access."
   },
   {
-    "_id": 103,
+    "projectCategoryId": "63852e422dfb96d4337ba9f1",
     "name": "Freelancing Educare Institute",
     "image": "https://i.ibb.co/WB6jKTD/smartmockups-lb17m4l8.jpg",
     "liveSite": "https://freelancing-educare-institute.web.app/",

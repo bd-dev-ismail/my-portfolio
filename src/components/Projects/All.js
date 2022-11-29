@@ -1,14 +1,16 @@
-import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import SingleBestProject from '../Home/DisplayProejct/SingleBestProject';
 
-const Projects = () => {
-    const projects = useLoaderData();
+const All = () => {
+    const [projects, setProjects] = useState([]);
+    useEffect(()=> {
+        fetch("http://localhost:5000/projects")
+        .then(res => res.json())
+        .then(data => setProjects(data))
+    },[])
     return (
       <div>
-        {/* <h3 className="text-3xl font-semibold heading">
-          My Best <span>Proejcts</span>
-        </h3> */}
+        All!!
         <div className="grid grid-cols-1 my-20 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project) => (
             <SingleBestProject
@@ -21,4 +23,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default All;

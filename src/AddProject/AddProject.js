@@ -6,18 +6,33 @@ const AddProject = () => {
     const {register, handleSubmit, formState: {errors}} = useForm();
     const [categories, setCategories] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
+    useEffect(() => {
+      setIsLoading(true);
+      fetch("http://localhost:5000/categories")
+        .then((res) => res.json())
+        .then((data) => {
+          setCategories(data);
+          setIsLoading(false);
+        });
+    }, []);
     const handelAddProject = (data)=> {
-        console.log(data)
-    }
-    useEffect(()=> {
-        setIsLoading(true);
-        fetch('http://localhost:5000/categories')
+        console.log(data);
+        fetch("http://localhost:5000/proejcts", {
+          method: 'POST',
+          headers: {
+            'content-type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        })
         .then(res => res.json())
         .then(data => {
-            setCategories(data);
-            setIsLoading(false);
-        });
-    },[])
+          console.log(data);
+          if(data.acknowledged){
+            alert('Proejct Added!')
+          }
+        })
+    }
+    
     return (
       <div className="mt-10 mb-20">
         <div>
@@ -115,7 +130,6 @@ const AddProject = () => {
                     {...register("serverCode")}
                     id="text"
                     type="text"
-                    
                     className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"
                   />
                 </div>
@@ -123,32 +137,33 @@ const AddProject = () => {
                 <div>
                   <label
                     className="text-white dark:text-gray-200"
-                    htmlFor="productCategory"
+                    htmlFor="projectCategory"
                   >
-                    Product Category
+                    Project Category
                   </label>
                   {isLoading ? (
-                      <Loader />
-                    ) : (
-                      <>
-                        <select
-                          {...register("productCategoryId", { required: true })}
-                          className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"
-                        >
-                          {categories.map((category) => (
-                            <option key={category._id} value={category?._id}>
-                              {category?.name}
-                            </option>
-                          ))}
-                        </select>
-                      </>
-                    )}
+                    <Loader />
+                  ) : (
+                    <>
+                      <select
+                        {...register("projectCategoryId", { required: true })}
+                        className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"
+                      >
+                        <option>Select</option>
+                        {categories?.map((category) => (
+                          <option key={category._id} value={category?._id}>
+                            {category?.name}
+                          </option>
+                        ))}
+                      </select>
+                    </>
+                  )}
                 </div>
               </div>
 
               <div>
                 <label className="text-white dark:text-gray-200" htmlFor="desc">
-                  Product Description
+                  Project Description
                 </label>
                 <textarea
                   {...register("desc", { required: true })}
