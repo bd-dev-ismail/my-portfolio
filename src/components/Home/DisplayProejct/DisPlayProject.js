@@ -10,7 +10,7 @@ const DisPlayProject = () => {
   const [loading ,setLoading] = useState(false);
   useEffect(()=> {
     setLoading(true)
-    fetch("http://localhost:5000/bestProjects")
+    fetch("https://my-portfolio-server-bd-dev-ismail.vercel.app/bestProjects")
       .then((res) => res.json())
       .then((data) => {
         setProjects(data);

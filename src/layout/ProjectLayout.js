@@ -8,7 +8,7 @@ const ProjectLayout = () => {
    const [isLoading, setIsLoading] = useState(false);
    useEffect(() => {
      setIsLoading(true);
-     fetch("http://localhost:5000/categories")
+     fetch("https://my-portfolio-server-bd-dev-ismail.vercel.app/categories")
        .then((res) => res.json())
        .then((data) => {
          setCategories(data);

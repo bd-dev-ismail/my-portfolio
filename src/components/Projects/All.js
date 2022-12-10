@@ -4,7 +4,7 @@ import SingleBestProject from '../Home/DisplayProejct/SingleBestProject';
 const All = () => {
     const [projects, setProjects] = useState([]);
     useEffect(()=> {
-        fetch("http://localhost:5000/projects")
+        fetch("https://my-portfolio-server-bd-dev-ismail.vercel.app/projects")
         .then(res => res.json())
         .then(data => setProjects(data))
     },[])

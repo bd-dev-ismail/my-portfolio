@@ -8,7 +8,7 @@ const AddProject = () => {
     const [isLoading, setIsLoading] = useState(false);
     useEffect(() => {
       setIsLoading(true);
-      fetch("http://localhost:5000/categories")
+      fetch("https://my-portfolio-server-bd-dev-ismail.vercel.app/categories")
         .then((res) => res.json())
         .then((data) => {
           setCategories(data);
@@ -17,7 +17,7 @@ const AddProject = () => {
     }, []);
     const handelAddProject = (data)=> {
         console.log(data);
-        fetch("http://localhost:5000/proejcts", {
+        fetch("https://my-portfolio-server-bd-dev-ismail.vercel.app/proejcts", {
           method: 'POST',
           headers: {
             'content-type': 'application/json'

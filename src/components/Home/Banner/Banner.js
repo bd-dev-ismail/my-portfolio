@@ -2,6 +2,18 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 const Banner = () => {
+    const handalePDF = () => {
+      // using Java Script method to get PDF file
+      fetch("resume.pdf").then((response) => {
+        response.blob().then((blob) => {
+          const fileURL = window.URL.createObjectURL(blob);
+          let alink = document.createElement("a");
+          alink.href = fileURL;
+          alink.download = "resume.pdf";
+          alink.click();
+        });
+      });
+    };
     return (
       <div>
         {/* <div
@@ -68,8 +80,14 @@ const Banner = () => {
                 business and individuals by developing websites. I build
                 websites to make you successful in the long term.
               </p>
-              <div className='text-center'>
-                <button className="btn mb-10 lg:mb-16">Download Resume</button>
+              <div className="text-center">
+                <button
+                
+                  onClick={handalePDF}
+                  className="btn border-2 hover:bg-yellow-300 hover:text-black text-white border-yellow-300 btn-outline mt-10 mb-10 lg:mb-16"
+                >
+                  Download Resume
+                </button>
               </div>
 
               <a
