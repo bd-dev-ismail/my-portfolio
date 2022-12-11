@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaHome, FaListAlt, FaRegEnvelope, FaUserGraduate, IconName } from "react-icons/fa";
+import { FaBloggerB, FaHome, FaListAlt, FaRegEnvelope, FaUserGraduate, IconName } from "react-icons/fa";
 const Navbar = () => {
      const [isMenuOpen, setIsMenuOpen] = useState(false);
     const menuItem = (
@@ -41,6 +41,17 @@ const Navbar = () => {
           >
             <FaRegEnvelope className="mr-1" />
             Contact
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/blog"
+            aria-label="Product pricing"
+            title="Product pricing"
+            className="font-medium flex items-center tracking-wide text-white hover:text-yellow-300 transition-colors duration-200 "
+          >
+            <FaBloggerB className="mr-1" />
+            Blogs
           </Link>
         </li>
       </>

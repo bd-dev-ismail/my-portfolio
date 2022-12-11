@@ -8,6 +8,7 @@ import SingleBestProject from './SingleBestProject';
 const DisPlayProject = () => {
   const [projects, setProjects] = useState([]);
   const [loading ,setLoading] = useState(false);
+   
   useEffect(()=> {
     setLoading(true)
     fetch("https://my-portfolio-server-bd-dev-ismail.vercel.app/bestProjects")

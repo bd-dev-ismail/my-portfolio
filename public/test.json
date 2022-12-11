@@ -1,0 +1,75 @@
+[
+    
+ {
+    "productID": "6385bf802dfb96d4334f80b0",
+    "dec": "We have three different queries like Buyer, Seller & Admin facilities."
+  },
+  {
+     "productID": "6385bf802dfb96d4334f80b0",
+    "dec": "Buyer can buy the product with successful payment by their valid card."
+  },
+  {
+     "productID": "6385bf802dfb96d4334f80b0",
+    "dec": "Buyer can report any product to Admin."
+  },
+  {
+    "productID": "6385bf802dfb96d4334f80b0",
+    "dec": "Admin has three layouts in the dashboard like all sellers, all buyers & Reported Items. In the reported Item admin see all reported item done by the buyer & Admin is able to delete that product"
+  },
+  {
+     "productID": "6385bf802dfb96d4334f80b0",
+    "dec": "Seller can add their products & also see her published product. If the seller wants seller able to delete her product."
+  },
+
+  {
+    "productID": "6385bf802dfb96d4334f80b1",
+    "dec": "We have proceted route of My Reviews & Add Services page ."
+  },
+  {
+    "productID": "6385bf802dfb96d4334f80b1",
+    "dec": "if users can't log in they can not access the processed route ."
+  },
+  {
+    "productID": "6385bf802dfb96d4334f80b1",
+    "dec": "We have a services page user can see all services with the view details button with each service card. Services card containing an image, price, and name & if the user clicks service image it will be displayed on popup."
+  },
+  {
+    "productID": "6385bf802dfb96d4334f80b1",
+    "dec": "After clicking the Services Details button user can see service details & also see each service's reviews. Interesting here user can also add her review but he/she needs to log in first.."
+  },
+  {
+    "productID": "6385bf802dfb96d4334f80b1",
+    "dec": "After login, the user can see extra two routes which are My Reviews & Adds Services."
+  },
+{
+"productID": "6385bf802dfb96d4334f80b1",
+"dec": "To secure our data we have JWT (JSON Web Token). if the user has no token he can't access our data, if the user has a token but is not valid also can't access."
+},
+ {
+    "productID": "6385bf802dfb96d4334f80b2",
+    "dec": "User can download Courses Details PDF to click Download PDF button."
+  },
+  {
+     "productID": "6385bf802dfb96d4334f80b2",
+    "dec": "Awesome Dark & Light Mood functionality."
+  },
+  {
+     "productID": "6385bf802dfb96d4334f80b2",
+    "dec": "In the navbar, the user can see his profile picture and also see his name on the hover profile image."
+  },
+  {
+    "productID": "6385bf802dfb96d4334f80b2",
+    "dec": "if users can't log in they can not access the processed route ."
+  },
+  {
+     "productID": "6385bf802dfb96d4334f80b2",
+    "dec": "We have proceted route of the checkout page ."
+  },
+
+  {
+   "productID": "6385bf802dfb96d4334f80b2",
+    "dec": "Handle user authentication."
+  }
+
+
+]

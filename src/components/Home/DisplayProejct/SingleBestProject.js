@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const SingleBestProject = ({project}) => {
-    const { image, name, liveSite, clientCode, serverCode, desc } = project;
+    const { image, name, liveSite, clientCode, serverCode, desc, _id } = project;
     return (
       <div className="card card-compact w-full lg:w-96 bg-base-100 border-2 border-yellow-400 hover:border-info shadow-2xl">
         <figure>
@@ -12,14 +13,15 @@ const SingleBestProject = ({project}) => {
           <h2 className="card-title">{name}</h2>
           <p>
             {desc ? desc.slice(0, 100) : ""}{" "}
-            <a
+            {/* <a
               className="text-info underline"
               href={clientCode}
               target="_blank"
               rel="noreferrer"
             >
-              Read More{" "}
-            </a>
+              More Details
+            </a> */}
+            <Link className='underline text-blue-600' to={`/projects/${_id}`}>More Details</Link>
           </p>
           <div className="card-actions justify-center">
             <a href={liveSite} target="_blank" rel="noreferrer">
