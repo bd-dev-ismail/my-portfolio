@@ -70,8 +70,9 @@ export const router = createBrowserRouter([
       {
         path: "/projects/:id",
         element: <Projects />,
-
+        
         loader: ({ params }) =>
+        
           fetch(
             `https://my-portfolio-server-bd-dev-ismail.vercel.app/project/${params.id}`
           ),

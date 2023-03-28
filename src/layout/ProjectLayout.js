@@ -26,7 +26,7 @@ const ProjectLayout = () => {
           key={category?._id}
           className="bg-black  text-white border mx-3  hover:border-yellow-300 hover:text-yellow-300 uppercase font-semibold"
         >
-          <Link to={`/project/${category?._id}`}>{category?.name}</Link>
+          <Link to={`/projects/${category?._id}`}>{category?.name}</Link>
         </li>
       ))}
     </>
