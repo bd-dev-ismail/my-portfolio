@@ -28,7 +28,7 @@ const ProjectDetails = () => {
             </h3>
             <ul className="w-full lg:w-96 mx-auto">
               <div className="">
-                {features.map((ele, idx) => (
+                {features?.map((ele, idx) => (
                   <li key={idx} className="flex py-2 items-start">
                     {" "}
                     {/* <FaCaretSquareRight /> */}

@@ -48,12 +48,14 @@ export const router = createBrowserRouter([
         path: "/blog",
         element: <Blog />,
       },
-      {
-        path: "/projects/:id",
-        element: <ProjectDetails />,
-        loader: ({ params }) =>
-          fetch(`https://my-portfolio-server-pink.vercel.app/bestProjects/${params.id}`),
-      },
+      // {
+      //   path: "/projects/:id",
+      //   element: <ProjectDetails />,
+      //   loader: ({ params }) =>
+      //     fetch(
+      //       `https://my-portfolio-server-pink.vercel.app/bestProjects/${params.id}`
+      //     ),
+      // },
     ],
   },
   {
@@ -68,6 +70,7 @@ export const router = createBrowserRouter([
       {
         path: "/projects/:id",
         element: <Projects />,
+
         loader: ({ params }) =>
           fetch(
             `https://my-portfolio-server-bd-dev-ismail.vercel.app/project/${params.id}`

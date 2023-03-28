@@ -21,7 +21,7 @@ const SingleBestProject = ({project}) => {
             >
               More Details
             </a> */}
-            <Link className='underline text-blue-600' to={`/projects/${_id}`}>More Details</Link>
+            {/* <Link className='underline text-blue-600' to={`/projects/${_id}`}>More Details</Link> */}
           </p>
           <div className="card-actions justify-center">
             <a href={liveSite} target="_blank" rel="noreferrer">
